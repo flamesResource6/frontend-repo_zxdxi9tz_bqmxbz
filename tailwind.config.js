@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -13,6 +14,32 @@ export default {
         mona: ['Mona Sans', 'system-ui', 'sans-serif'],
         'ibm-plex': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
         manrope: ['Manrope', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        brand: {
+          DEFAULT: '#6D5AFF',
+          50: '#F0EFFF',
+          100: '#DFDDFF',
+          200: '#BDBAFF',
+          300: '#9C98FF',
+          400: '#7A75FF',
+          500: '#6D5AFF',
+          600: '#4C3DFF',
+          700: '#3629E6',
+          800: '#2720B2',
+          900: '#1C1780',
+        },
+        neon: {
+          blue: '#00E5FF',
+          purple: '#B388FF',
+        }
+      },
+      backgroundImage: {
+        'grid-dark': "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+        'grid-light': "linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)",
+      },
+      backgroundSize: {
+        grid: '24px 24px',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
